@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Data -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name ="title" content ="Revela | Sophisticated Web Proxy"/>
+  <meta name ="description" content ="A Sophisticated Web Proxy that allows you to browse the web anonymously and securely."/>
+  <meta property ="og:type" content ="website"/>
+  <meta property ="og:url" content ="https://revela.network"/>
+  <meta property ="og:title" content ="Revela | Sophisticated Web Proxy"/>
+  <meta property ="og:description" content ="A Sophisticated Web Proxy that allows you to browse the web anonymously and securely."/>
+  <meta property ="og:image" content ="https://cdn.joshsevero.dev/Static/Media/NvlL09.png"/>
+  <meta property ="twitter:card" content ="summary_large_image"/>
+  <meta property ="twitter:url" content ="https://revela.network"/>
+  <meta property ="twitter:title" content ="Revela | Sophisticated Web Proxy"/>
+  <meta property ="twitter:description" content ="A Sophisticated Web Proxy that allows you to browse the web anonymously and securely."/>
+  <meta property ="twitter:image" content ="https://cdn.joshsevero.dev/Static/Media/NvlL09.png"/>
+  <!-- Meta Data -->
+  <!-- Scripts -->
+  <script src="uv/uv.bundle.js" defer></script>
+  <script src="uv/uv.config.js" defer></script>
+  <script src="register-sw.js" defer></script>
+  <script src="search.js" defer></script>
+  <script src="index.js" defer></script>
+  <script src="cloak.js"></script>
+  <!-- Scripts -->
+  <!-- CSS -->
+  <link rel="stylesheet" href="import.css" />
+  <link rel="stylesheet" href="index.css" />
+  <!-- CSS -->
+</head>
+<body>
+  <div class="container">
+    <img class="image" src="https://cdn.joshsevero.dev/Static/Media/5QEvQJ.png">
+    <div class="paragraph">
+      <h2>A Sophisticated Web Proxy that allows you to browse the web anonymously and securely.</h2>
+    </div>
+    <div class="buttons">
+      <button onclick="cloak()" class="cloaker">Activate Cloaker</button>
+      <button onclick="window.location.href='https://' + window.location.hostname + '/games';" class="games">Games</button>
+    </div>
+    <div class="search-bar">
+      <form id="rv-form">
+        <input type="hidden" value="https://search.brave.com/search?q=%s" id="rv-search-engine" />
+        <input type="text" id="rv-address" placeholder="Search the web without being censored" />
+      </form>
+    </div>
+    <div class="footer">
+      <button class="node" title="Node ID">Node ID: NA.NYC.02</button>
+      <button class="stats" title="System Stats" onclick="window.location.href='https://status.revela.network';">System Stats</button>
+    </div>
+    <div class="error">
+      <p id="rv-error">
+        <pre id="rv-error-code"></pre>
+      </p>
+    </div>
+  </div>
+  
+</body>
+</html>
